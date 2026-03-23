@@ -1,0 +1,129 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d6a4f"/>
+      <stop offset="100%" style="stop-color:#40916c"/>
+    </linearGradient>
+    <linearGradient id="hexInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22223a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer card -->
+  <rect x="0" y="0" width="800" height="800" rx="140" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="800" height="800" rx="140" fill="none" stroke="#2d6a4f" stroke-width="3" opacity="0.4"/>
+
+  <!-- Soft circle bg decorations -->
+  <circle cx="160" cy="160" r="200" fill="rgba(45,106,79,0.07)"/>
+  <circle cx="640" cy="640" r="180" fill="rgba(244,162,97,0.06)"/>
+  <circle cx="640" cy="160" r="120" fill="rgba(116,198,157,0.05)"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HEXAGON (central structure)                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <polygon points="400,130 500,187 500,302 400,360 300,302 300,187" fill="url(#hexGrad)"/>
+  <polygon points="400,148 482,194 482,284 400,330 318,284 318,194" fill="#40916c"/>
+  <polygon points="400,170 468,210 468,280 400,320 332,280 332,210" fill="url(#hexInner)"/>
+
+  <!-- Heartbeat / pulse line -->
+  <polyline points="332,245 355,245 368,215 382,278 396,228 410,255 424,245 468,245"
+    fill="none" stroke="#74c69d" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Peak pulse dot -->
+  <circle cx="396" cy="228" r="8" fill="#f4a261"/>
+  <circle cx="396" cy="228" r="4" fill="#ffd166"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- DUMBBELL — left                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="168" y="400" width="80" height="22" rx="11" fill="#40916c"/>
+  <rect x="154" y="388" width="26" height="46" rx="9" fill="#74c69d"/>
+  <rect x="236" y="388" width="26" height="46" rx="9" fill="#74c69d"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FORK & LEAF — right (diet motif)           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Fork handle -->
+  <rect x="546" y="406" width="10" height="48" rx="5" fill="#74c69d"/>
+  <!-- Fork tines -->
+  <rect x="534" y="380" width="5" height="32" rx="2.5" fill="#74c69d"/>
+  <rect x="543" y="380" width="5" height="32" rx="2.5" fill="#74c69d"/>
+  <rect x="552" y="380" width="5" height="32" rx="2.5" fill="#74c69d"/>
+  <rect x="561" y="380" width="5" height="32" rx="2.5" fill="#74c69d"/>
+  <!-- Fork bridge -->
+  <rect x="534" y="408" width="32" height="5" rx="2.5" fill="#74c69d"/>
+
+  <!-- Leaf next to fork -->
+  <ellipse cx="608" cy="400" rx="26" ry="16" fill="#2d6a4f" transform="rotate(-30,608,400)"/>
+  <ellipse cx="608" cy="400" rx="26" ry="16" fill="none" stroke="#74c69d" stroke-width="1.5" transform="rotate(-30,608,400)" opacity="0.6"/>
+  <!-- Leaf vein -->
+  <line x1="596" y1="410" x2="620" y2="390" stroke="#74c69d" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <line x1="604" y1="405" x2="610" y2="394" stroke="#74c69d" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+  <line x1="610" y1="402" x2="616" y2="396" stroke="#74c69d" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- APPLE silhouette — diet element             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Apple body -->
+  <path d="M190,480 Q175,468 178,450 Q182,430 200,428 Q212,426 218,438 Q224,426 236,428 Q254,430 258,450 Q261,468 246,480 Q230,498 218,498 Q206,498 190,480 Z" fill="#f4a261" opacity="0.9"/>
+  <!-- Apple highlight -->
+  <ellipse cx="205" cy="448" rx="7" ry="10" fill="rgba(255,255,255,0.25)" transform="rotate(-20,205,448)"/>
+  <!-- Apple stem -->
+  <path d="M218,428 Q220,416 228,412" fill="none" stroke="#2d6a4f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Apple leaf -->
+  <ellipse cx="232" cy="410" rx="10" ry="6" fill="#40916c" transform="rotate(-40,232,410)"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- AI SPARKLES                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Large sparkle top-right -->
+  <g transform="translate(580,175)">
+    <polygon points="0,-28 6,-6 28,0 6,6 0,28 -6,6 -28,0 -6,-6" fill="#f4a261"/>
+    <polygon points="0,-16 3,-3 16,0 3,3 0,16 -3,3 -16,0 -3,-3" fill="#ffd166"/>
+  </g>
+  <!-- Medium sparkle top-left -->
+  <g transform="translate(222,188)">
+    <polygon points="0,-18 4,-4 18,0 4,4 0,18 -4,4 -18,0 -4,-4" fill="#ffd166" opacity="0.8"/>
+  </g>
+  <!-- Small dots cluster top-right -->
+  <circle cx="570" cy="280" r="5" fill="#f4a261" opacity="0.7"/>
+  <circle cx="586" cy="265" r="3" fill="#ffd166" opacity="0.55"/>
+  <circle cx="577" cy="295" r="2.5" fill="#f4a261" opacity="0.45"/>
+  <!-- Small dots cluster top-left -->
+  <circle cx="224" cy="285" r="4" fill="#ffd166" opacity="0.6"/>
+  <circle cx="210" cy="272" r="2.5" fill="#f4a261" opacity="0.45"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PROGRESS BAR — small detail bottom of hex  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="306" y="370" width="188" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="306" y="370" width="130" height="8" rx="4" fill="#40916c"/>
+  <circle cx="436" cy="374" r="6" fill="#f4a261"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BRAND NAME                                 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="400" y="560" text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">FitAI</text>
+
+  <!-- TAGLINE -->
+  <text x="400" y="600" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="400" font-size="18" fill="rgba(255,255,255,0.5)"
+    letter-spacing="6">COACH</text>
+
+  <!-- Accent underline -->
+  <rect x="340" y="618" width="120" height="3.5" rx="1.75" fill="#40916c" opacity="0.7"/>
+
+  <!-- Tagline below underline -->
+  <text x="400" y="660" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="400" font-size="14" fill="rgba(255,255,255,0.3)"
+    letter-spacing="2">FITNESS · DIET · AI</text>
+
+</svg>
